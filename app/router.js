@@ -7,6 +7,11 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
+  this.route('home');
+  this.route('the-monkees');
+  this.route('live-shows');
+  this.route('contact-us');
+  this.route('our-music');
 });
 
 export default Router;
