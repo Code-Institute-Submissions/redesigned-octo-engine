@@ -1,0 +1,45 @@
+<div class="navbar">
+  <div class="mobile-menu">
+    {{#if media.isMobile}}
+      {{#if isMobileMenu}}
+        <img class="mobile-menu-icon" src='assets/images/x-mark-5-512.png' {{action 'hideMenu'}}>
+      {{else}}
+        <img class="mobile-menu-icon" src='assets/images/36-512_white_hamburger.png' {{action 'showMenu'}}>
+      {{/if}}
+    {{/if}}
+  </div>
+  <div class="menu">
+    <div class="header-links">
+        {{#link-to 'home'}}
+        Home
+        {{/link-to}}
+    </div>
+    <div class="header-links" id="the-monkees">
+        {{#link-to 'the-monkees'}}
+          The Monkees
+        {{/link-to}}
+    </div>
+    <div class="header-links">
+        {{#link-to 'our-music'}}
+          Our Music
+        {{/link-to}}
+    </div>
+    {{#if media.isMobile}}
+      <div class="header-links">
+        <a id="play-track" {{action 'play'}}>
+          Play >
+        </a>
+      </div>
+    {{/if}}
+    <div class="header-links">
+      {{#link-to 'live-shows'}}
+        Live Shows
+      {{/link-to}}
+    </div>
+    <div class="header-links">
+      {{#link-to 'contact-us'}}
+        Contact/Book Us
+      {{/link-to}}
+    </div>
+  </div>
+</div>
