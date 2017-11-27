@@ -49,3 +49,63 @@ Specify what it takes to deploy your app.
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+
+## Manual Testing
+
+* Social Footer icons.
+  * Click on the 'FaceBook' icon, verify a new page/tab is opened with a dialog box to log into FaceBook website to share with the URL of the current page as a parameter.
+  * Click on the 'Instagram' icon, verify a new page/tab is opened with 'The Monkees' instagram page.
+  * Click on the 'Twitter' icon, verify a new page/tab is opened with the message posting text box prefilled with this text 'Check out this great band http://<url of the current page>:4200/home'.
+
+
+## Acceptance tests
+
+### Navigation Menu Bar User Stories
+
+* As a user I want to click on the 'Home' link and be shown the 'Home' page
+
+  * Example acceptance criteria:
+    * The 'Home' page is shown
+
+* As a user I want to click on the 'Our Music' link and be shown the 'Our Music' page
+
+  * Example acceptance criteria:  
+    * The 'Our Music' page is shown
+
+* As a user I want to click on the 'Contact/Book Us' link and be shown the 'Contact/Book Us' page
+
+  * Example acceptance criteria:
+    * The 'Contact/Book Us' page is shown
+
+* As a user I want to click on the 'Live Shows' link and be shown the 'Live Shows' page
+
+  * Example acceptance criteria:
+    * The 'Live Shows' page is shown
+
+* As a user I want to click on the 'The Monkees' link and be shown the 'The Monkees' page
+
+  * Example acceptance criteria:
+    * The 'The Monkees' page is shown
+
+### Social Footer User Stories
+
+* As a user I want to click on the 'FaceBook' icon and a new page/tab is opened with the FaceBook login page.
+
+  * Example acceptance criteria:
+    * The 'FaceBook' page with a login dialog is shown in a new tab/page
+
+* As a user I want to click on the 'Instagram' icon and a new page/tab is opened with 'The Monkees' Instagram page.
+
+  * Example acceptance criteria:
+    * 'The Monkees' Instagram page is shown in a new tab/page
+
+* As a user I want to click on the 'Twitter' icon and a new page/tab is opened with the Twitter post page with the message prefilled with details about 'The Monkees' website.
+
+  * Example acceptance criteria:
+    * The 'Twitter' message posting page is shown in a new tab/page
+
+
+## Known Issues
+* components/social-footer.js should pass ESLint
+  * 29:11 - '$' is not defined. (no-undef)
+  * 34:11 - '$' is not defined. (no-undef)
