@@ -2,6 +2,8 @@ import Ember from 'ember';
 import Component from '@ember/component';
 import { inject as service } from '@ember/service';
 
+/*eslint-env jquery*/
+
 export default Component.extend({
 
   currentUrl: service(),

@@ -87,6 +87,13 @@ Specify what it takes to deploy your app.
   * Example acceptance criteria:
     * The 'The Monkees' page is shown
 
+### Home page User Stories
+
+* As a user I want to see a video icon on the 'Home' page.
+
+  * Example acceptance criteria:
+    * Video icon on the 'Home' page
+
 ### Social Footer User Stories
 
 * As a user I want to click on the 'FaceBook' icon and a new page/tab is opened with the FaceBook login page.
@@ -106,6 +113,3 @@ Specify what it takes to deploy your app.
 
 
 ## Known Issues
-* components/social-footer.js should pass ESLint
-  * 29:11 - '$' is not defined. (no-undef)
-  * 34:11 - '$' is not defined. (no-undef)
