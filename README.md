@@ -57,6 +57,9 @@ Specify what it takes to deploy your app.
   * Click on the 'Instagram' icon, verify a new page/tab is opened with 'The Monkees' instagram page.
   * Click on the 'Twitter' icon, verify a new page/tab is opened with the message posting text box prefilled with this text 'Check out this great band http://<url of the current page>:4200/home'.
 
+* Desktop to Tablet Navigation Menu Bar
+  * Resize the screen and you should see the padding between the menu links and links font size reduce
+
 
 ## Acceptance tests
 

@@ -95,3 +95,52 @@ body {
 .media-desktop #the-monkees a:hover {
   color: #ffffff;
 }
+
+/*##########*/
+
+/* Tablet Navbar */
+
+.media-tablet .menu {
+  display: flex;
+  justify-content: center;
+}
+
+.media-tablet .header-links {
+  display: inline-block;
+  border: 5px;
+  border-color: white;
+  padding 20px 0px 20px 0px;
+  line-height: 40px;
+}
+
+
+/*Hide mobile close button for Tablet */
+
+.media-tablet .mobile-menu {
+  display: none;
+}
+
+.media-tablet .header-links a {
+    color: #ffffff;
+    font-size: 3vh;
+    font-family: "Impact", Charcoal, sans-serif;
+    text-transform: capitalize;
+    text-decoration:  none;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.media-tablet .header-links a:hover {
+  color: #fb851b;
+}
+
+
+.media-tablet #the-monkees a {
+  font-size: 4vh;
+  color: #fb851b;
+}
+
+
+.media-tablet #the-monkees a:hover {
+  color: #ffffff;
+}
