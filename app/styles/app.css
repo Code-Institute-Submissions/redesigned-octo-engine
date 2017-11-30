@@ -1,0 +1,97 @@
+/* application styles */
+
+/*Main Windows All Formats*/
+
+body {
+  margin: 0;
+  background-color: #fb851b;
+}
+
+#appview {
+  background: url('images/The-Monkees161207-015.jpg'); no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin: 0;
+}
+
+/*All Formats*/
+
+/*Close Window Button*/
+
+.square-x:hover {
+  cursor: pointer;
+}
+
+
+/*Home Play Button*/
+
+#home-play-icon:hover {
+  cursor: pointer;
+}
+
+/*Social Footer*/
+
+.icons-div:hover {
+  cursor: pointer;
+}
+
+.header-links a:hover {
+  cursor: pointer;
+}
+
+
+#twitter-div:hover {
+  cursor: pointer;
+}
+
+
+/*##########*/
+
+/* Desktop Navbar */
+
+.media-desktop .menu {
+  display: flex;
+  justify-content: center;
+}
+
+.media-desktop .header-links {
+  display: inline-block;
+  border: 5px;
+  border-color: white;
+  padding 20px 0px 20px 0px;
+  line-height: 40px;
+}
+
+
+/*Hide mobile close button for desktops*/
+
+.media-desktop .mobile-menu {
+  display: none;
+}
+
+.media-desktop .header-links a {
+    color: #ffffff;
+    font-size: 4vh;
+    font-family: "Impact", Charcoal, sans-serif;
+    text-transform: capitalize;
+    text-decoration:  none;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.media-desktop .header-links a:hover {
+  color: #fb851b;
+}
+
+
+.media-desktop #the-monkees a {
+  font-size: 5vh;
+  color: #fb851b;
+}
+
+
+.media-desktop #the-monkees a:hover {
+  color: #ffffff;
+}

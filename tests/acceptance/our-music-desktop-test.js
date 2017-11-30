@@ -3,10 +3,12 @@ import moduleForAcceptance from 'monkees-stream-1-1/tests/helpers/module-for-acc
 
 moduleForAcceptance('Acceptance | our music desktop');
 
-test('visiting /our-music', function(assert) {
+test('visiting /our-music shows nav bar', function(assert) {
   visit('/our-music');
+  setBreakpoint('desktop');
 
   andThen(function() {
     assert.equal(currentURL(), '/our-music');
+    assert.equal(find('.header-links').length, 5, 'Desktop Navigation Menu Bar visible with 5 links');
   });
 });

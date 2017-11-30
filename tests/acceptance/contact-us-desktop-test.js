@@ -3,10 +3,12 @@ import moduleForAcceptance from 'monkees-stream-1-1/tests/helpers/module-for-acc
 
 moduleForAcceptance('Acceptance | contact us desktop');
 
-test('visiting /contact-us', function(assert) {
+test('visiting /contact-us shows nav bar', function(assert) {
   visit('/contact-us');
+  setBreakpoint('desktop');
 
   andThen(function() {
     assert.equal(currentURL(), '/contact-us');
+    assert.equal(find('.header-links').length, 5, 'Desktop Navigation Menu Bar visible with 5 links');
   });
 });
