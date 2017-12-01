@@ -24,7 +24,6 @@ body {
   cursor: pointer;
 }
 
-
 /*Home Play Button*/
 
 #home-play-icon:hover {
@@ -46,7 +45,6 @@ body {
   cursor: pointer;
 }
 
-
 /*##########*/
 
 /* Desktop Navbar */
@@ -67,7 +65,7 @@ body {
 
 /*Hide mobile close button for desktops*/
 
-.media-desktop .mobile-menu {
+.media-desktop .hide {
   display: none;
 }
 
@@ -90,7 +88,6 @@ body {
   font-size: 5vh;
   color: #fb851b;
 }
-
 
 .media-desktop #the-monkees a:hover {
   color: #ffffff;
@@ -116,7 +113,7 @@ body {
 
 /*Hide mobile close button for Tablet */
 
-.media-tablet .mobile-menu {
+.media-tablet .hide {
   display: none;
 }
 
@@ -142,5 +139,58 @@ body {
 
 
 .media-tablet #the-monkees a:hover {
+  color: #ffffff;
+}
+
+/*##########*/
+
+/*Navbar Mobile*/
+
+.media-mobile .navbar {
+  display: flex;
+  top: 0;
+}
+
+.media-mobile .mobile-menu-icon {
+  height: 30px;
+  resize: both;
+}
+
+.mobile-menu-icon:hover {
+  cursor: pointer;
+}
+
+.media-mobile .header-links {
+  flex-direction: column;
+  white-space: nowrap;
+  z-index: 999;
+  position: relative;
+  padding: 5px 5px 5px 20px;
+  background: rgba(0,0,0,0.5);
+  display: none;
+}
+
+
+
+.media-mobile .header-links a {
+    color: #FFFFFF;
+    font-size: 3vw;
+    font-family: "Impact", Charcoal, sans-serif;
+    text-transform: capitalize;
+    text-decoration:  none;
+    padding-left: 0px;
+    padding-right: 5px;
+}
+
+.media-mobile .header-links a:hover {
+  color: #fb851b;
+}
+
+.media-mobile #the-monkees a {
+  font-size: 3.5vw;
+  color: #fb851b;
+}
+
+.media-mobile #the-monkees a:hover {
   color: #ffffff;
 }

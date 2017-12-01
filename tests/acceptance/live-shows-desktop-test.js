@@ -4,8 +4,8 @@ import moduleForAcceptance from 'monkees-stream-1-1/tests/helpers/module-for-acc
 moduleForAcceptance('Acceptance | live shows desktop');
 
 test('visiting /live-shows shows nav bar', function(assert) {
-  visit('/live-shows');
   setBreakpoint('desktop');
+  visit('/live-shows');
 
   andThen(function() {
     assert.equal(currentURL(), '/live-shows');

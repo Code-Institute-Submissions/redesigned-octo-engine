@@ -4,8 +4,8 @@ import moduleForAcceptance from 'monkees-stream-1-1/tests/helpers/module-for-acc
 moduleForAcceptance('Acceptance | our music desktop');
 
 test('visiting /our-music shows nav bar', function(assert) {
-  visit('/our-music');
   setBreakpoint('desktop');
+  visit('/our-music');
 
   andThen(function() {
     assert.equal(currentURL(), '/our-music');

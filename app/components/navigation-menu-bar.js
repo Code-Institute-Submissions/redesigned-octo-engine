@@ -3,6 +3,7 @@ import Ember from 'ember';
 export default Ember.Component.extend({
 
   isMobileMenu: false,
+  isTrackPlaying: false,
 
   actions: {
     showMenu() {
@@ -18,17 +19,27 @@ export default Ember.Component.extend({
     play() {
 
         try {
+          window.audioTrack = new Audio();
+          window.audioTrack.src = "assets/audio/1914DayByDay-20140627-27thJune.mp3";
+          window.audioTrack.play();
+          this.toggleProperty('isTrackPlaying');
 
-          let audioTrack = new Audio();
-          audioTrack.src = "assets/audio/1914DayByDay-20140627-27thJune.mp3";
-          audioTrack.play();
-          Ember.$('#play-track').text("Playing");
         } catch (e) {
 
           Ember.$('#play-track').text("Sorry Audio Not Supported");
 
         }
-    }
+    },
+    stop() {
 
+        try {
+          window.audioTrack.pause();
+          this.toggleProperty('isTrackPlaying');
+        } catch (e) {
+
+          Ember.$('#stop-track').text("Sorry Audio Not Supported");
+
+        }
+    },
   }
 });

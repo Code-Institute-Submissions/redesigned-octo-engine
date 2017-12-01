@@ -60,6 +60,13 @@ Specify what it takes to deploy your app.
 * Desktop to Tablet Navigation Menu Bar
   * Resize the screen and you should see the padding between the menu links and links font size reduce
 
+* Desktop/Table to Mobile Navigation Menu Bar
+  * Resize the screen and you should see the menu links disappear and the 'hamburger' icon show
+  * Click on the 'Mobile hamburger' and the mobile menu items will be shown, click on the 'Mobile Close' button will remove the menu items
+
+* Mobile Play / Stop track menu item
+  * Click on the 'Play >' menu item and a audio track should play
+  * Click on the 'Stop |' menu item and the audio track should stop playing
 
 ## Acceptance tests
 
@@ -90,6 +97,16 @@ Specify what it takes to deploy your app.
   * Example acceptance criteria:
     * The 'The Monkees' page is shown
 
+* As a Mobile user I want to click on the 'Mobile Hamburger' and be shown the menu items
+
+  * Example acceptance criteria:
+    * The mobile menu items are visible
+
+* As a Mobile user I want to click on the 'Mobile Close' button and the menu items are hidden
+
+  * Example acceptance criteria:
+    * The mobile menu items are not visible
+
 ### Home page User Stories
 
 * As a user I want to see a video icon on the 'Home' page.
@@ -116,3 +133,5 @@ Specify what it takes to deploy your app.
 
 
 ## Known Issues
+
+* The background image moves when the mobile menu items are visible, it appears to change the focus to the lead singer of the band

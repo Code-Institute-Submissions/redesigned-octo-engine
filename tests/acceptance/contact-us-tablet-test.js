@@ -4,8 +4,8 @@ import moduleForAcceptance from 'monkees-stream-1-1/tests/helpers/module-for-acc
 moduleForAcceptance('Acceptance | Contact Us tablet');
 
 test('visiting /contact-us shows nav bar', function(assert) {
-  visit('/contact-us');
   setBreakpoint('tablet');
+  visit('/contact-us');
 
   andThen(function() {
     assert.equal(currentURL(), '/contact-us');

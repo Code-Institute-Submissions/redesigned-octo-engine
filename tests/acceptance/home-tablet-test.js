@@ -4,8 +4,8 @@ import moduleForAcceptance from 'monkees-stream-1-1/tests/helpers/module-for-acc
 moduleForAcceptance('Acceptance | Home Tablet');
 
 test('visiting /home shows nav bar', function(assert) {
-  visit('/home');
   setBreakpoint('tablet');
+  visit('/home');
 
   andThen(function() {
     assert.equal(currentURL(), '/home');

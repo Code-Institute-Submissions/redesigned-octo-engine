@@ -11,8 +11,8 @@ test('visiting /home', function(assert) {
   });
 });
 
-test('visiting / shows body image', function(assert) {
-  visit('/');
+test('visiting /home shows body image', function(assert) {
+  visit('/home');
 
   andThen(function() {
     assert.equal(currentURL(), '/home');
