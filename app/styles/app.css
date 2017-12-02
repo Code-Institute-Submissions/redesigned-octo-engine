@@ -24,11 +24,53 @@ body {
   cursor: pointer;
 }
 
-/*Home Play Button*/
+/* Home Page body */
+
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 633px;
+  position: relative;
+}
+
+.box {
+  flex-grow: 1;
+}
 
 #home-play-icon:hover {
   cursor: pointer;
 }
+
+#video-box {
+  max-width: 60%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 2%;
+  padding-right: 2%;
+  flex-grow: 2;
+  position: relative;
+
+}
+
+
+#home-play-icon {
+  width: 100%;
+  resize: both;
+}
+
+#home-video {
+  width: 100%;
+  resize: both;
+}
+
+#x-icon {
+  width: 100%;
+  resize: both;
+}
+
 
 /*Social Footer*/
 
@@ -92,6 +134,22 @@ body {
 .media-desktop #the-monkees a:hover {
   color: #ffffff;
 }
+
+/*Desktop Page Body*/
+
+.media-desktop #home-button {
+  max-width: 6%;
+  resize: both;
+}
+
+.media-desktop #x-button {
+  max-width: 3%;
+  resize: both;
+  top: -3%;
+  left: -1%;
+  position: absolute;
+}
+
 
 /*##########*/
 
@@ -169,8 +227,6 @@ body {
   background: rgba(0,0,0,0.5);
   display: none;
 }
-
-
 
 .media-mobile .header-links a {
     color: #FFFFFF;

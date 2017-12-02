@@ -68,6 +68,10 @@ Specify what it takes to deploy your app.
   * Click on the 'Play >' menu item and a audio track should play
   * Click on the 'Stop |' menu item and the audio track should stop playing
 
+* Home page video
+  * Click on the Video icon and a video player should open with the video playing
+
+
 ## Acceptance tests
 
 ### Navigation Menu Bar User Stories
@@ -109,10 +113,12 @@ Specify what it takes to deploy your app.
 
 ### Home page User Stories
 
-* As a user I want to see a video icon on the 'Home' page.
+* As a user I want to see a video icon on the 'Home' page.  Clicking on the video icon will open a video player with autoplay.
 
   * Example acceptance criteria:
     * Video icon on the 'Home' page
+    * Clicking on the Video icon will open a video player and start playing the video.
+
 
 ### Social Footer User Stories
 
