@@ -200,6 +200,33 @@ body {
   color: #ffffff;
 }
 
+/*Tablet Page Body*/
+
+.media-tablet #home-button {
+  max-width: 7%;
+  resize: both;
+}
+
+.media-tablet #x-button {
+  max-width: 4%;
+  resize: both;
+  top: -3%;
+  left: -1%;
+  position: absolute;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*##########*/
 
 /*Navbar Mobile*/

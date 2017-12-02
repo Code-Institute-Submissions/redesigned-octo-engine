@@ -71,7 +71,6 @@ Specify what it takes to deploy your app.
 * Home page video
   * Click on the Video icon and a video player should open with the video playing
 
-
 ## Acceptance tests
 
 ### Navigation Menu Bar User Stories
