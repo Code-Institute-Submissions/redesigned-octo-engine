@@ -216,17 +216,6 @@ body {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
 /*##########*/
 
 /*Navbar Mobile*/
@@ -276,4 +265,19 @@ body {
 
 .media-mobile #the-monkees a:hover {
   color: #ffffff;
+}
+
+/*Mobile Page Body*/
+
+.media-mobile #home-button {
+  max-width: 9%;
+  resize: both;
+}
+
+.media-mobile #x-button {
+  max-width: 5%;
+  resize: both;
+  top: -3%;
+  left: -1%;
+  position: absolute;
 }
