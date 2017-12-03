@@ -121,21 +121,10 @@ Specify what it takes to deploy your app.
 
 ### Social Footer User Stories
 
-* As a user I want to click on the 'FaceBook' icon and a new page/tab is opened with the FaceBook login page.
+* As a user I want to see 3 icons ('FaceBook', 'Instagram' and 'Twitter') on the footer of the website across all routes on the website.
 
   * Example acceptance criteria:
-    * The 'FaceBook' page with a login dialog is shown in a new tab/page
-
-* As a user I want to click on the 'Instagram' icon and a new page/tab is opened with 'The Monkees' Instagram page.
-
-  * Example acceptance criteria:
-    * 'The Monkees' Instagram page is shown in a new tab/page
-
-* As a user I want to click on the 'Twitter' icon and a new page/tab is opened with the Twitter post page with the message prefilled with details about 'The Monkees' website.
-
-  * Example acceptance criteria:
-    * The 'Twitter' message posting page is shown in a new tab/page
-
+    * The 'FaceBook', 'Instragram' and 'Twitter' icons are visible on all routes.
 
 ## Known Issues
 

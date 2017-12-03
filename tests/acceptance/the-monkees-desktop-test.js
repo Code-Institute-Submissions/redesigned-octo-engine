@@ -12,3 +12,13 @@ test('visiting /the-monkees shows nav bar', function(assert) {
     assert.equal(find('.header-links').length, 5, 'Desktop Navigation Menu Bar visible with 5 links');
   });
 });
+
+test('visiting / shows social footer bar', function(assert) {
+  setBreakpoint('desktop');
+  visit('/the-monkees');
+
+  andThen(function() {
+    assert.equal(currentURL(), '/the-monkees');
+    assert.equal(find('.icons-div').length, 3, 'Desktop footer social bar visible with 3 icons');
+  });
+});

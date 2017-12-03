@@ -87,6 +87,12 @@ body {
   cursor: pointer;
 }
 
+.icons-graphics {
+  width: 100%;
+  resize: both;
+}
+
+
 /*##########*/
 
 /* Desktop Navbar */
@@ -148,6 +154,27 @@ body {
   top: -3%;
   left: -1%;
   position: absolute;
+}
+
+/* Desktop Footer */
+
+.media-desktop #social-footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.media-desktop .icons-div {
+  max-width: 4%;
+  resize: both;
+  flex-direction: row;
+  padding: 0% 0.4% 0% 0.4%;
+}
+
+.media-desktop .icons-graphics {
+  border-radius: 15%;
 }
 
 

@@ -5,8 +5,9 @@
     <div class="icons-div" id="instagram-i">
       <img src="assets/images/glyph-logo_May2016.png" class="icons-graphics" onclick={{action 'instagramShare'}}>
     </div>
-    <div id="twitter-div">
-        <img src="assets/images/Twitter_Logo_WhiteOnBlue.png" id="twitter-graphic" onclick={{action 'twitterShare'}}
-          {{action 'mouseEnterTwitter' on="mouseEnter"}} {{action 'mouseLeaveTwitter' on="mouseLeave"}}>
-    </div>
+    {{#if media.isDesktop}}
+      <div class="icons-div" id="twitter-div">
+        <img src="assets/images/Twitter_Logo_WhiteOnBlue.png" class="icons-graphics" id="twitter-graphic" onclick={{action 'twitterShare'}}>
+      </div>
+    {{/if}}
 </div>
