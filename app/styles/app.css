@@ -242,6 +242,26 @@ body {
   position: absolute;
 }
 
+/* Tablet Footer */
+
+.media-tablet #social-footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.media-tablet .icons-div {
+  max-width: 4%;
+  resize: both;
+  flex-direction: row;
+  padding: 0% 0.4% 0% 0.4%;
+}
+
+.media-tablet .icons-graphics {
+  border-radius: 15%;
+}
 
 /*##########*/
 
