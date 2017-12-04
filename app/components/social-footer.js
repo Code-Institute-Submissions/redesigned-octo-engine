@@ -19,21 +19,26 @@ export default Component.extend({
       window.open("https://www.instagram.com/themonkees/");
     },
     mouseEnterTwitter() {
-      Ember.$('.icons-div').attr('style','display:inline-block');
-      Ember.$('#twitter-div').attr('style','width:35px');
+      Ember.$('#facebook-i').toggleClass("icons-div icons-div-show");
+      Ember.$('#instagram-i').toggleClass("icons-div icons-div-show");
+      Ember.$('#twitter-div').toggleClass("twitter-icon twitter-icon-show");
     },
     mouseLeaveTwitter() {
-//change this to class
 
-      Ember.$('.icons-div')
+      Ember.$('#facebook-i')
         .delay(5000)
         .queue(function() {
-          $(this).attr('style', 'display:none').dequeue(); // eslint-disable-line no-use-before-define
+          $(this).toggleClass("icons-div-show icons-div").dequeue(); // eslint-disable-line no-use-before-define
+        });
+      Ember.$('#instagram-i')
+        .delay(5000)
+        .queue(function() {
+          $(this).toggleClass("icons-div-show icons-div").dequeue(); // eslint-disable-line no-use-before-define
         });
       Ember.$('#twitter-div')
         .delay(5000)
         .queue(function() {
-          $(this).attr('style', 'width:18px').dequeue(); // eslint-disable-line no-use-before-define
+          $(this).toggleClass("twitter-icon-show twitter-icon").dequeue(); // eslint-disable-line no-use-before-define
         });
     }
   }

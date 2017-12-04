@@ -52,7 +52,7 @@ Specify what it takes to deploy your app.
 
 ## Manual Testing
 
-* Social Footer icons.
+* Desktop/Tablet Social Footer icons.
   * Click on the 'FaceBook' icon, verify a new page/tab is opened with a dialog box to log into FaceBook website to share with the URL of the current page as a parameter.
   * Click on the 'Instagram' icon, verify a new page/tab is opened with 'The Monkees' instagram page.
   * Click on the 'Twitter' icon, verify a new page/tab is opened with the message posting text box prefilled with this text 'Check out this great band http://<url of the current page>:4200/home'.
@@ -60,7 +60,7 @@ Specify what it takes to deploy your app.
 * Desktop to Tablet Navigation Menu Bar
   * Resize the screen and you should see the padding between the menu links and links font size reduce
 
-* Desktop/Table to Mobile Navigation Menu Bar
+* Desktop/Tablet to Mobile Navigation Menu Bar
   * Resize the screen and you should see the menu links disappear and the 'hamburger' icon show
   * Click on the 'Mobile hamburger' and the mobile menu items will be shown, click on the 'Mobile Close' button will remove the menu items
 
@@ -70,6 +70,14 @@ Specify what it takes to deploy your app.
 
 * Home page video
   * Click on the Video icon and a video player should open with the video playing
+
+  * Desktop/Tablet to Mobile Social Footer Bar
+    * Resize the screen and you should see the 'FaceBook', 'Instagram' icons disappear and the 'Twitter' icon move partially off the right of the screen
+    * Hover over the 'Twitter' icon and the 'FaceBook' and 'Instagram' icons will appears
+      * Click on the 'FaceBook' icon, verify a new page/tab is opened with a dialog box to log into FaceBook website to share with the URL of the current page as a parameter.
+      * Click on the 'Instagram' icon, verify a new page/tab is opened with 'The Monkees' instagram page.
+      * Click on the 'Twitter' icon, verify a new page/tab is opened with the message posting text box prefilled with this text 'Check out this great band http://<url of the current page>:4200/home'.* 
+
 
 ## Acceptance tests
 

@@ -33,7 +33,6 @@ body {
   box-sizing: border-box;
   width: 100%;
   min-height: 633px;
-  position: relative;
 }
 
 .box {
@@ -74,7 +73,7 @@ body {
 
 /*Social Footer*/
 
-.icons-div:hover {
+.icons-graphics:hover {
   cursor: pointer;
 }
 
@@ -327,4 +326,47 @@ body {
   top: -3%;
   left: -1%;
   position: absolute;
+}
+
+/* Mobile Footer */
+
+.media-mobile #social-footer-container {
+  text-align: right;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.media-mobile .icons-div {
+  max-width: 6%;
+  resize: both;
+  display: inline-block;
+  visibility: hidden;
+}
+
+.media-mobile .icons-div-show {
+  max-width: 6%;
+  resize: both;
+  padding: 0% 0.4% 0% 0.4%;
+  display: inline-block;
+  visibility: visible;
+}
+
+.media-mobile .icons-graphics {
+  border-radius: 15%;
+}
+
+.media-mobile .twitter-icon {
+  display: inline-block;
+  max-width: 6%;
+  resize: both;
+  right: -3%;
+  position: absolute;
+}
+
+.media-mobile .twitter-icon-show {
+  display: inline-block;
+  max-width: 6%;
+  resize: both;
+  margin-right: 0.4%;
 }
