@@ -11,6 +11,7 @@ module.exports = {
   rules: {
   },
   globals: {
-    setBreakpoint: true
+    setBreakpoint: true,
+    pinterest: true
   }
 };

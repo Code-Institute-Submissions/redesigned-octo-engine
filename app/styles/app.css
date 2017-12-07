@@ -26,7 +26,7 @@ body {
 
 /* Home Page body */
 
-#container {
+.container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -70,6 +70,15 @@ body {
   resize: both;
 }
 
+.band-image-container {
+  cursor: pointer;
+}
+
+.pinterest_logo:hover {
+  cursor: pointer;
+}
+
+
 
 /*Social Footer*/
 
@@ -89,6 +98,64 @@ body {
 .icons-graphics {
   width: 100%;
   resize: both;
+}
+
+/* The Monkees Body */
+
+#band-members-box {
+  max-width: 80%;
+  background-color: white;
+  flex-grow: 2;
+  overflow: auto;
+  border-radius: 0.5%;
+  padding: 0 0.8% 0 0.8%;
+}
+
+.member-name {
+  float: left;
+  font-size: 3vh;
+  font-family: "Impact", Charcoal, sans-serif;
+}
+
+.paragraph-text {
+  float: left;
+  font-size: 2.5vh;
+  font-family: "Impact", Charcoal, sans-serif;
+}
+
+div .band-image-container {
+  max-width: 18%;
+  resize: both;
+  float: right;
+  padding-left: 2%;
+  position: relative;
+}
+
+.headshot {
+  width: 100%;
+  resize: both;
+}
+
+
+div .pinterest {
+  max-width: 12%;
+  resize: both;
+  z-index: 100;
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  visibility: hidden;
+  transition-delay: 3s;
+}
+
+.pinterest_logo {
+  width: 100%;
+  resize: both;
+}
+
+.headshot:hover + .pinterest {
+visibility: visible;
+transition-delay: 0s;
 }
 
 
@@ -163,6 +230,7 @@ body {
   align-items: center;
   box-sizing: border-box;
   width: 100%;
+  padding: 0.5% 0 0.3% 0;
 }
 
 .media-desktop .icons-div {
@@ -249,6 +317,7 @@ body {
   align-items: center;
   box-sizing: border-box;
   width: 100%;
+  padding: 0.5% 0 0.3% 0;
 }
 
 .media-tablet .icons-div {
@@ -335,7 +404,10 @@ body {
   width: 100%;
   overflow: hidden;
   position: relative;
+  padding: 1% 0 0.3% 0;
 }
+
+
 
 .media-mobile .icons-div {
   max-width: 6%;

@@ -76,8 +76,11 @@ Specify what it takes to deploy your app.
     * Hover over the 'Twitter' icon and the 'FaceBook' and 'Instagram' icons will appears
       * Click on the 'FaceBook' icon, verify a new page/tab is opened with a dialog box to log into FaceBook website to share with the URL of the current page as a parameter.
       * Click on the 'Instagram' icon, verify a new page/tab is opened with 'The Monkees' instagram page.
-      * Click on the 'Twitter' icon, verify a new page/tab is opened with the message posting text box prefilled with this text 'Check out this great band http://<url of the current page>:4200/home'.* 
+      * Click on the 'Twitter' icon, verify a new page/tab is opened with the message posting text box prefilled with this text 'Check out this great band http://<url of the current page>:4200/home'.*
 
+* 'The Monkees' Page
+  * Hover over an image and the 'Pinterest' icon will appear on the top right, click on the icon and a new page opens to log into the 'Pinterest' website
+  * As you resize the page (Desktop to Tablet to Mobile versions) the images and text reduce and the text moves around the images
 
 ## Acceptance tests
 

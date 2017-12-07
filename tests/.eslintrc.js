@@ -3,6 +3,7 @@ module.exports = {
     embertest: true
   },
   globals: {
-    setBreakpoint: true
+    setBreakpoint: true,
+    pinterest: true
   }
 };
