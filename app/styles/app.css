@@ -18,11 +18,23 @@ body {
 
 /*All Formats*/
 
-/*Close Window Button*/
+/* Mobile Menu Hamburger */
 
-.square-x:hover {
+.fa-bars:hover {
   cursor: pointer;
 }
+
+/*Close Window Button*/
+
+.fa-window-close {
+  font-size: 4vh;
+  color: #ffffff;
+}
+
+.fa-window-close:hover {
+  cursor: pointer;
+}
+
 
 /* Home Page body */
 
@@ -65,10 +77,15 @@ body {
   resize: both;
 }
 
-#x-icon {
-  width: 100%;
-  resize: both;
+.fa-play-circle {
+  color: #ffffff;
+  font-size: 10vh;
 }
+
+.fa-play-circle:hover {
+  cursor: pointer;
+}
+
 
 .band-image-container {
   cursor: pointer;
@@ -302,8 +319,8 @@ transition-delay: 0s;
 }
 
 .media-tablet #x-button {
-  max-width: 4%;
-  resize: both;
+  /*max-width: 4%;
+  resize: both;*/
   top: -3%;
   left: -1%;
   position: absolute;
@@ -340,10 +357,17 @@ transition-delay: 0s;
   top: 0;
 }
 
-.media-mobile .mobile-menu-icon {
-  height: 30px;
-  resize: both;
+.media-mobile .fa-window-close {
+  padding-left: 3px;
 }
+
+.media-mobile .fa-bars {
+  color: #ffffff;
+  font-size: 5vw;
+  padding-left: 3px;
+}
+
+
 
 .mobile-menu-icon:hover {
   cursor: pointer;
@@ -382,6 +406,12 @@ transition-delay: 0s;
   color: #ffffff;
 }
 
+.media-mobile .fa-pause .fa-play {
+  font-size: 3vw;
+  padding-left: 100px;
+}
+
+
 /*Mobile Page Body*/
 
 .media-mobile #home-button {
@@ -390,8 +420,6 @@ transition-delay: 0s;
 }
 
 .media-mobile #x-button {
-  max-width: 5%;
-  resize: both;
   top: -3%;
   left: -1%;
   position: absolute;

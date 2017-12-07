@@ -22,6 +22,7 @@ module.exports = function(defaults) {
   // along with the exports of each module as its value.
 
   app.import('vendor/pinterest/sdk.js');
+  app.import('vendor/fontawesome/fontawesome-all.js');
 
   return app.toTree();
 };

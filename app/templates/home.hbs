@@ -5,7 +5,7 @@
     </div>
     <div class="box" id="video-box">
       <div id="x-button">
-        <img src="assets/images/x-mark-5-512.png" class="square-x" id="x-icon" {{action 'toggleBody'}}>
+        <i class="far fa-window-close" {{action 'toggleBody'}}></i>
       </div>
       <video id="home-video" controls autoplay>
         <source src="assets/videos/macaque-monkey-on-tree-jumping-climbing-playing_r7u2ngmxl__WL.mp4" type="video/mp4">
@@ -17,7 +17,7 @@
     </div>
   {{else}}
     <div id="home-button">
-      <img id="home-play-icon" src="assets/images/icons8-play-button_white.png" {{action "toggleBody"}}>
+      <i class="far fa-play-circle" id="home-play-icon" {{action "toggleBody"}}></i>
     </div>
   {{/if}}
 

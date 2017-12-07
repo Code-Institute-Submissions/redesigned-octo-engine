@@ -2,9 +2,9 @@
   <div class="hide" id="mobile-menu">
     {{#if media.isMobile}}
       {{#if isMobileMenu}}
-        <img class="mobile-menu-icon" id="x-nav-icon"src='assets/images/x-mark-5-512.png' {{action 'hideMenu'}}>
+        <i class="far fa-window-close" {{action 'hideMenu'}}></i>
       {{else}}
-        <img class="mobile-menu-icon" id="hamburger-nav-icon" src='assets/images/36-512_white_hamburger.png' {{action 'showMenu'}}>
+        <i class="fas fa-bars" {{action 'showMenu'}}></i>
       {{/if}}
     {{/if}}
   </div>
@@ -28,11 +28,11 @@
       <div class="header-links">
         {{#if isTrackPlaying}}
           <a id="stop-track" {{action 'stop'}}>
-            Stop |
+            Stop <i class="fas fa-pause"></i>
           </a>
         {{else}}
           <a id="play-track" {{action 'play'}}>
-            Play >
+            Play <i class="fas fa-play"></i>
           </a>
         {{/if}}
       </div>
