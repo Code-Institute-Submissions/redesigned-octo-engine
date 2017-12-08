@@ -20,6 +20,13 @@ body {
 
 /* Mobile Menu Hamburger */
 
+.fa-bars {
+  color: #ffffff;
+  font-size: 5vw;
+  padding-left: 3px;
+}
+
+
 .fa-bars:hover {
   cursor: pointer;
 }
@@ -27,7 +34,8 @@ body {
 /*Close Window Button*/
 
 .fa-window-close {
-  font-size: 4vh;
+  font-size: 5vw;
+  padding-left: 3px;
   color: #ffffff;
 }
 
@@ -349,18 +357,6 @@ transition-delay: 0s;
   display: flex;
   top: 0;
 }
-
-.media-mobile .fa-window-close {
-  padding-left: 3px;
-}
-
-.media-mobile .fa-bars {
-  color: #ffffff;
-  font-size: 5vw;
-  padding-left: 3px;
-}
-
-
 
 .mobile-menu-icon:hover {
   cursor: pointer;
