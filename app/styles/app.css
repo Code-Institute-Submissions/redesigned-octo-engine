@@ -55,14 +55,6 @@ body {
   cursor: pointer;
 }
 
-#video-box {
-  max-width: 60%;
-  padding: 10% 2.5% 5% 2.5%;
-  flex-grow: 2;
-  position: relative;
-  background-color: #ffffff;
-}
-
 #home-video {
   width: 100%;
   resize: both;
