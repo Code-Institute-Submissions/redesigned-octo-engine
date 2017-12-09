@@ -1,5 +1,7 @@
 import Ember from 'ember';
 
+/*eslint-env jquery*/
+
 export default Ember.Component.extend({
 
   isMobileMenu: false,
