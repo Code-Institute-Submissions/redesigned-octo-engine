@@ -233,6 +233,15 @@ transition-delay: 0s;
   position: absolute;
 }
 
+.media-desktop .fa-window-close {
+  font-size: 2vw;
+  padding-left: 3px;
+  color: #ffffff;
+}
+
+
+
+
 /* Home page video */
 
 .media-desktop #video-box {
