@@ -33,12 +33,6 @@ body {
 
 /*Close Window Button*/
 
-.fa-window-close {
-  font-size: 5vw;
-  padding-left: 3px;
-  color: #ffffff;
-}
-
 .fa-window-close:hover {
   cursor: pointer;
 }
@@ -433,10 +427,19 @@ transition-delay: 0s;
 /*Mobile Page Body*/
 
 .media-mobile #x-button {
-  top: -21px;
-  left: -27px;
+  top: -19px;
+  left: -24px;
   position: absolute;
 }
+
+
+.media-mobile .fa-window-close {
+  font-size: 4vw;
+  padding-left: 3px;
+  color: #ffffff;
+}
+
+
 
 /* Home page video */
 
