@@ -329,10 +329,17 @@ transition-delay: 0s;
 /*Tablet Page Body*/
 
 .media-tablet #x-button {
-  top: -18px;
-  left: -20px;
+  top: -22px;
+  left: -24px;
   position: absolute;
 }
+
+.media-tablet .fa-window-close {
+  font-size: 3vw;
+  padding-left: 3px;
+  color: #ffffff;
+}
+
 
 /* Home page video */
 
@@ -343,6 +350,9 @@ transition-delay: 0s;
   position: relative;
   background-color: #050924;
 }
+
+
+
 
 
 
