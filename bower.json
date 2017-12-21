@@ -1,0 +1,8 @@
+{
+  "name": "monkees-stream-1-1",
+  "dependencies": {
+    "jquery.inputmask": "^3.3.11",
+    "moment": "^2.20.1",
+    "pikaday": "^1.6.1"
+  }
+}

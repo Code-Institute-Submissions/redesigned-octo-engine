@@ -84,6 +84,7 @@ Specify what it takes to deploy your app.
   * As you resize the page (Desktop to Tablet to Mobile versions) the images and text reduce and the text moves around the images
 
 * 'Contact Us' page
+  * Click on the Date field and a calendar popup will appear, select date and verify date shown in text box matches selected date
   * Enter the postcode 'CM2 0DS' and the Cost displayed will be '10.520969073383625'
   * Follow the above step and then remove the last character, then the displayed cost will be 0
   * Enter the invalid postcode 'CM2 0D' and the Cost displayed will be '0'
@@ -147,3 +148,4 @@ Specify what it takes to deploy your app.
 
 * The background image moves when the mobile menu items are visible, it appears to change the focus to the lead singer of the band
 * The Contact Us Acceptance Test is commented out because the 'wait-for-controller-with-promise' stalls because the postcode lookup either doesn't return a valid promise or the helper is flawed
+* DEPRECATION: Addon files were detected in /node_modules/ember-cli-datepicker/addon, ember-cli-babel has been installed but warning still presented

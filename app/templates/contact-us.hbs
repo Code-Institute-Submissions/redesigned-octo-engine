@@ -3,6 +3,8 @@
     </div>
     <div class="box" id="contact-us-box">
       <h1>Contact us Book Us</h1>
+      {{date-picker date=mydate valueFormat='YYYY-MM-DD'}}
+      <br>
       <input type="text" id="search-postcode" oninput={{perform searchPostcode value="target.value"}} placeholder="Venue Postcode" />
       {{#if searchPostcode.isRunning}}
         <i class="fa fa-spinner" aria-hidden="true"></i>
