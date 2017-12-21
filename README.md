@@ -83,6 +83,11 @@ Specify what it takes to deploy your app.
   * Hover over an image and the 'Pinterest' icon will appear on the top right, click on the icon and a new page opens to log into the 'Pinterest' website
   * As you resize the page (Desktop to Tablet to Mobile versions) the images and text reduce and the text moves around the images
 
+* 'Contact Us' page
+  * Enter the postcode 'CM2 0DS' and the Cost displayed will be '10.520969073383625'
+  * Follow the above step and then remove the last character, then the displayed cost will be 0
+  * Enter the invalid postcode 'CM2 0D' and the Cost displayed will be '0'
+
 ## Acceptance tests
 
 ### Navigation Menu Bar User Stories
@@ -141,3 +146,4 @@ Specify what it takes to deploy your app.
 ## Known Issues
 
 * The background image moves when the mobile menu items are visible, it appears to change the focus to the lead singer of the band
+* The Contact Us Acceptance Test is commented out because the 'wait-for-controller-with-promise' stalls because the postcode lookup either doesn't return a valid promise or the helper is flawed

@@ -4,6 +4,7 @@ module.exports = {
   },
   globals: {
     setBreakpoint: true,
-    pinterest: true
+    pinterest: true,
+    waitForControllerWithPromise: true
   }
 };

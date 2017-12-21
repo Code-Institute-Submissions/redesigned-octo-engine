@@ -71,6 +71,11 @@ body {
   cursor: pointer;
 }
 
+.fa-spinner {
+  color: #ffffff;
+  font-size: 5vh;
+}
+
 
 .band-image-container {
   cursor: pointer;
@@ -169,6 +174,28 @@ div .pinterest {
 visibility: visible;
 transition-delay: 0s;
 }
+
+#contact-us-box {
+  max-width: 80%;
+  background-color: #0a0d36;
+  flex-grow: 2;
+  overflow: auto;
+  border-radius: 0.5%;
+  padding: 0 0.8% 0 0.8%;
+  background: rgba(10,13,54,0.8);
+}
+
+
+/* Contact/Book Us Body */
+
+.cost-text {
+  color: white;
+}
+
+.decimal {
+  color: red;
+}
+
 
 
 /*##########*/

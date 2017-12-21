@@ -1,1 +1,18 @@
-{{outlet}}
+<div class="container">
+    <div class="box">
+    </div>
+    <div class="box" id="contact-us-box">
+      <h1>Contact us Book Us</h1>
+      <input type="text" id="search-postcode" oninput={{perform searchPostcode value="target.value"}} placeholder="Venue Postcode" />
+      {{#if searchPostcode.isRunning}}
+        <i class="fa fa-spinner" aria-hidden="true"></i>
+      {{/if}}
+      {{#if cost}}
+        <h2 class="cost-text">Travel Cost: <span class="decimal">{{cost}}</span></h2>
+      {{else}}
+        <h2 class="cost-text">Travel Cost: 0</h2>
+      {{/if}}
+    </div>
+    <div class="box">
+    </div>
+</div>

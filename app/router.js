@@ -10,7 +10,9 @@ Router.map(function() {
   this.route('home');
   this.route('the-monkees');
   this.route('live-shows');
-  this.route('contact-us');
+  this.route('contact-us', function() {
+     this.route('autocomplete');
+  });
   this.route('our-music');
 });
 
