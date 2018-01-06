@@ -88,6 +88,7 @@ Specify what it takes to deploy your app.
   * Enter the postcode 'CM2 0DS' and the Cost displayed will be '10.520969073383625'
   * Follow the above step and then remove the last character, then the displayed cost will be 0
   * Enter the invalid postcode 'CM2 0D' and the Cost displayed will be '0'
+  * The 'Submit' button will only be active when a 'Name' of 3 characters and a 'Message' of 10 characters is entered
 
 ## Acceptance tests
 
@@ -149,3 +150,5 @@ Specify what it takes to deploy your app.
 * The background image moves when the mobile menu items are visible, it appears to change the focus to the lead singer of the band
 * The Contact Us Acceptance Test is commented out because the 'wait-for-controller-with-promise' stalls because the postcode lookup either doesn't return a valid promise or the helper is flawed
 * DEPRECATION: Addon files were detected in /node_modules/ember-cli-datepicker/addon, ember-cli-babel has been installed but warning still presented
+* The 'Booking Inquiry' date can be in the past and has not been validated
+* The Contact / Book Us page email sending has not been tested because it requires #If you want Sender Policy Framework (SPF) checks to succeed, you must publish an SPF record to the DNS server of the MAIL FROM domain. Learn more.#

@@ -3,17 +3,38 @@
     </div>
     <div class="box" id="contact-us-box">
       <h1>Contact us Book Us</h1>
-      {{date-picker date=mydate valueFormat='YYYY-MM-DD'}}
-      <br>
-      <input type="text" id="search-postcode" oninput={{perform searchPostcode value="target.value"}} placeholder="Venue Postcode" />
-      {{#if searchPostcode.isRunning}}
-        <i class="fa fa-spinner" aria-hidden="true"></i>
-      {{/if}}
-      {{#if cost}}
-        <h2 class="cost-text">Travel Cost: <span class="decimal">{{cost}}</span></h2>
-      {{else}}
-        <h2 class="cost-text">Travel Cost: 0</h2>
-      {{/if}}
+      <p>Please fill in the required fields (Name and Message), the rest is helpful but optional.  Thanks for sharing this great musical journey with us.</P>
+<div><label class="form__label">*Full Name</label>{{input value=fullNameValue key-up="validateFullName"}}</div>
+<div><label class="form__label">Telephone</label>{{input value=telephoneValue}}</div>
+<div><label class="form__label">Email</label>{{input value=emailValue}}</div>
+          <div><label class="form__label">Message Type</label>{{contact-type-select selectMessageType="setIsBooking" id='messageType'}}</div>
+          {{#if isBooking}}
+            {{date-picker date=mydate valueFormat='YYYY-MM-DD'}}
+            <label>Venue Post Code</label><input type="text" id="search-postcode" oninput={{perform searchPostcode value="target.value"}} placeholder="Post Code" />
+            {{#if searchPostcode.isRunning}}
+              <i class="fa fa-spinner" aria-hidden="true"></i>
+            {{/if}}
+            {{#if cost}}
+              <h2 class="cost-text">Travel Cost: <span class="decimal enMoney">{{cost}}</span></h2>
+              {{else}}
+                <h2 class="cost-text">Travel Cost: <span class="enMoney"> 0</span></h2>
+            {{/if}}
+          {{/if}}
+
+          {{#if media.isDesktop}}
+            <div><label class="form__label">Message*</label>{{textarea value=messageValue key-up="validateMessage" cols="80" rows="6"}}</div>
+          {{/if}}
+          {{#if media.isTablet}}
+            <div><label class="form__label">Message*</label>{{textarea value=messageValue key-up="validateMessage" cols="60" rows="8"}}</div>
+          {{/if}}
+          {{#if media.isMobile}}
+            <div><label class="form__label">Message*</label>{{textarea value=messageValue key-up="validateMessage" cols="40" rows="12"}}</div>
+          {{/if}}
+
+          <button onclick={{action 'emailForm'}} disabled={{disableButtonSubmit}}>Submit</button>
+
+
+
     </div>
     <div class="box">
     </div>

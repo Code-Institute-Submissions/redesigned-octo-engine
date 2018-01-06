@@ -1,0 +1,9 @@
+<div>
+  <select {{action 'selectMessageType' on='change'}} id="message-type-select" placeholder="Contacting or Booking Us">
+    {{#each tagTypes as |type|}}
+      <option value="{{type}}" selected={{eq type model.tagType}}>
+        {{type}}
+      </option>
+    {{/each}}
+  </select>
+</div>

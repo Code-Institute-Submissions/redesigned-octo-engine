@@ -5,6 +5,9 @@ const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 module.exports = function(defaults) {
   let app = new EmberApp(defaults, {
+    dotenv: {
+      clientAllowedKeys: ['ACCESS_KEY','SECRET_KEY'],
+    }
     // Add options here
   });
 

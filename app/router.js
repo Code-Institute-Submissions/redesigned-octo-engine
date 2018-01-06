@@ -12,6 +12,7 @@ Router.map(function() {
   this.route('live-shows');
   this.route('contact-us');
   this.route('our-music');
+  this.route('message-sent');
 });
 
 export default Router;

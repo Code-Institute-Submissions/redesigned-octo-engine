@@ -175,6 +175,8 @@ visibility: visible;
 transition-delay: 0s;
 }
 
+/* Contact/Book Us Body */
+
 #contact-us-box {
   max-width: 80%;
   background-color: #0a0d36;
@@ -185,9 +187,6 @@ transition-delay: 0s;
   background: rgba(10,13,54,0.8);
 }
 
-
-/* Contact/Book Us Body */
-
 .cost-text {
   color: white;
 }
@@ -195,6 +194,30 @@ transition-delay: 0s;
 .decimal {
   color: red;
 }
+
+.enMoney::before {
+    content:"£";
+}
+
+/* Message Sent Body */
+
+#message-sent-box {
+  max-width: 20%;
+  background-color: #0a0d36;
+  flex-grow: 2;
+  border-radius: 0.5%;
+  padding: 1% 2% 1% 2%;
+  background: rgba(10,13,54,0.8);
+  text-align: center;
+}
+
+.flash-text-orange {
+  color: #fb851b;
+  font-size: 3.5vh;
+  font-family: "Impact", Charcoal, sans-serif;
+}
+
+
 
 
 
