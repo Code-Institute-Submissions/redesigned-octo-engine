@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+
 import $ from 'jquery';
 import { isBlank } from '@ember/utils';
 import Controller from '@ember/controller';
@@ -7,6 +9,8 @@ import ukPostcodeValidator from '../utils/uk-postcode-validator';
 import haversineFormula from '../utils/haversine-formula';
 import messageValidator from '../utils/message-validator';
 import nameValidator from '../utils/name-validator';
+
+
 
 // the send to email code has been taken from these resources
 // https://docs.aws.amazon.com/ses/latest/DeveloperGuide/examples-send-using-sdk.html
@@ -162,9 +166,9 @@ export default Controller.extend({
 
 
     if(err) {
-      console.log(err.message);
+  //    console.log(err.message);
     } else {
-        console.log("Email sent! Message ID: ", data.MessageId);
+//        console.log("Email sent! Message ID: ", data.MessageId);
       }
   });
 
