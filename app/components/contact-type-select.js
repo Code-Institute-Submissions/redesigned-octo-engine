@@ -2,7 +2,7 @@ import Component from '@ember/component';
 import $ from 'jquery';
 
 export default Component.extend({
-  tagTypes: ['','Booking Inquiry','Fan Mail'],
+  tagTypes: ['Please Select...','Booking Inquiry','Fan Mail'],
 
   actions: {
     selectMessageType() {

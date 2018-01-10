@@ -2,37 +2,37 @@
     <div class="box">
     </div>
     <div class="box" id="contact-us-box">
-      <h1>Contact us Book Us</h1>
-      <p>Please fill in the required fields (Name and Message), the rest is helpful but optional.  Thanks for sharing this great musical journey with us.</P>
-<div><label class="form__label">*Full Name</label>{{input value=fullNameValue key-up="validateFullName"}}</div>
-<div><label class="form__label">Telephone</label>{{input value=telephoneValue}}</div>
-<div><label class="form__label">Email</label>{{input value=emailValue}}</div>
-          <div><label class="form__label">Message Type</label>{{contact-type-select selectMessageType="setIsBooking" id='messageType'}}</div>
-          {{#if isBooking}}
-            {{date-picker date=mydate valueFormat='YYYY-MM-DD'}}
-            <label>Venue Post Code</label><input type="text" id="search-postcode" oninput={{perform searchPostcode value="target.value"}} placeholder="Post Code" />
-            {{#if searchPostcode.isRunning}}
+      <p class="instruction-text">Please fill in the required fields (Name and Message), the rest is helpful but optional.  Thanks for sharing this great musical journey with us.</P>
+      <div class="form-text-right"><label class="form-label">*Full Name</label>{{input value=fullNameValue key-up="validateFullName"}}</div>
+      <div class="form-text-right"><label class="form-label">Telephone</label>{{input value=telephoneValue}}</div>
+      <div class="form-text-right"><label class="form-label">Email</label>{{input value=emailValue}}</div>
+      <div class="form-text-right">{{contact-type-select selectMessageType="setIsBooking" id='messageType'}}</div>
+      {{#if isBooking}}
+        <div class="form-text-right">
+          <label class="form-label">Show Date</label>{{date-picker date=mydate valueFormat='YYYY-MM-DD'}}
+        </div>
+        <div class="form-text-right">
+          {{#if searchPostcode.isRunning}}
               <i class="fa fa-spinner" aria-hidden="true"></i>
-            {{/if}}
-            {{#if cost}}
-              <h2 class="cost-text">Travel Cost: <span class="decimal enMoney">{{cost}}</span></h2>
-              {{else}}
-                <h2 class="cost-text">Travel Cost: <span class="enMoney"> 0</span></h2>
-            {{/if}}
           {{/if}}
+          <label class="form-label">Venue Post Code</label><input type="text" id="search-postcode" oninput={{perform searchPostcode value="target.value"}} placeholder="Post Code" />
+        </div>
 
+      {{/if}}
+      <div class="form-text-right">
           {{#if media.isDesktop}}
-            <div><label class="form__label">Message*</label>{{textarea value=messageValue key-up="validateMessage" cols="80" rows="6"}}</div>
+            <div><label class="form-label">Message*</label>{{textarea value=messageValue key-up="validateMessage" cols="80" rows="12"}}</div>
           {{/if}}
           {{#if media.isTablet}}
-            <div><label class="form__label">Message*</label>{{textarea value=messageValue key-up="validateMessage" cols="60" rows="8"}}</div>
+            <div><label class="form-label">Message*</label>{{textarea value=messageValue key-up="validateMessage" cols="45" rows="12"}}</div>
           {{/if}}
           {{#if media.isMobile}}
-            <div><label class="form__label">Message*</label>{{textarea value=messageValue key-up="validateMessage" cols="40" rows="12"}}</div>
+            <div><label class="form-label">Message*</label>{{textarea value=messageValue key-up="validateMessage" cols="30" rows="12"}}</div>
           {{/if}}
-
+        </div>
+        <div class="form-text-right">
           <button onclick={{action 'emailForm'}} disabled={{disableButtonSubmit}}>Submit</button>
-
+        </div>
 
 
     </div>
