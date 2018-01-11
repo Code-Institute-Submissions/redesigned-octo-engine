@@ -1,1 +1,56 @@
-{{outlet}}
+<div class="container">
+    <div class="box">
+    </div>
+    <div class="box" id="band-members-box">
+          <h3 class="member-name member-name-white" id="micky-dolenz-name" {{action 'toggleMickyDolenz'}}>More of the Monkees</h3>
+          {{#if isMickyDolenz}}
+            <p class="paragraph-text">
+              <div class="band-image-container">
+                <img src="assets/images/220px-Moreoftm.jpg" id="micky-dolenz" class="headshot">
+                <div class="pinterest" id="micky-dolenz-pinterest">
+                  <img src="assets/images/badgeRGB.png" class="pinterest_logo" onclick={{action 'pinterestImage'}}>
+                </div>
+              </div>
+              More of the Monkees is the second full-length album by the Monkees. It was recorded in late 1966 and released on Colgems label #102 on January 9, 1967. It displaced the band's debut album from the top of the Billboard 200 chart and remained at No.1 for 18 weeks—the longest of any Monkees album. Combined, the first two Monkees albums were at the top of the Billboard chart for 31 consecutive weeks. More of the Monkees also went to No.1 in the UK. In the U.S. it has been certified quintuple platinum by the RIAA with sales of more than five million copies. More of the Monkees is also notable for being the first pop/rock album to be the best-selling album of the year in the U.S. college in Los Angeles when he was hired for the "drummer" role in NBC's The Monkees.
+            </p>
+        {{/if}}
+        <h3 class="member-name member-name-white" id="peter-tork-name" {{action 'togglePeterTork'}}>Headquarters</h3>
+        {{#if isPeterTork}}
+          <p class="paragraph-text">
+            <div class="band-image-container">
+              <img src="assets/images/220px-Headquarters_-_The_Monkees.jpg" id="peter-tork" class="headshot">
+              <div class="pinterest" id="peter-tork-pinterest">
+                <img src="assets/images/badgeRGB.png" class="pinterest_logo" onclick={{action 'pinterestImage'}}>
+              </div>
+            </div>
+            Headquarters is the third album issued by the Monkees and the first with substantial songwriting and instrumental performances by members of the group itself, rather than by session musicians and professional songwriters. After a struggle for creative autonomy with their record label, the group had been allowed to record by themselves. Headquarters reached No. 1 on the Billboard 200 chart and was certified double platinum in the United States with sales of more than two million copies within the first two months of release. It peaked at #2 on the UK charts. It is included in the 2006 book 1001 Albums You Must Hear Before You Die.
+          </p>
+        {{/if}}
+          <h3 class="member-name member-name-white" id="davy-jones-name" {{action 'toggleDavyJones'}}>Pisces, Aquarius, Capricorn & Jones Ltd</h3>
+          {{#if isDavyJones}}
+          <p class="paragraph-text">
+            <div class="band-image-container">
+              <img src="assets/images/Pisces,_Aquarius,_Capricorn_&_Jones_Ltd._-_The_Monkees.jpg" id="davy-jones" class="headshot">
+              <div class="pinterest" id="davy-jones-pinterest">
+                <img src="assets/images/badgeRGB.png" class="pinterest_logo" onclick={{action 'pinterestImage'}}>
+              </div>
+            </div>
+            Pisces, Aquarius, Capricorn & Jones Ltd. is the fourth album by the Monkees, released on November 6, 1967, when the Monkees were exerting more control over their music and had started to play many of the instruments themselves, something their record company had previously forbidden.
+          </p>
+          {{/if}}
+          <h3 class="member-name member-name-white" id="michael-nesmith-name" {{action 'toggleMichaelNesmith'}}>Good Times!</h3>
+          {{#if isMichaelNesmith}}
+            <p class="paragraph-text">
+              <div class="band-image-container">
+                <img src="assets/images/Good_Times!_(The_Monkees)_(Front_Cover).jpg" id="davy-jones" class="headshot">
+                <div class="pinterest" id="michael-nesmith-pinterest">
+                  <img src="assets/images/badgeRGB.png" class="pinterest_logo" onclick={{action 'pinterestImage'}}>
+                </div>
+              </div>
+              Good Times! is the twelfth studio album by The Monkees. Produced mainly by Adam Schlesinger (with some additional bonus tracks produced by Andrew Sandoval), the album was recorded to commemorate the band's 50th anniversary. It is the first Monkees studio album since Justus (1996) and the first since the death of founding member Davy Jones. The album features surviving Monkees Micky Dolenz, Michael Nesmith, and Peter Tork, as well as a posthumous contribution from Jones.
+            </p>
+          {{/if}}
+    </div>
+    <div class="box">
+  </div>
+</div>
