@@ -175,7 +175,7 @@ visibility: visible;
 transition-delay: 0s;
 }
 
-/* Contact/Book Us Body Desktop */
+/* Contact/Book Us Body */
 
 #contact-us-box {
   max-width: 50%;
@@ -192,7 +192,6 @@ transition-delay: 0s;
   font-size: 2.5vh;
   font-family: "Impact", Charcoal, sans-serif;
 }
-
 
 .form-text-right {
   float: right;
@@ -226,7 +225,13 @@ transition-delay: 0s;
   font-family: "Impact", Charcoal, sans-serif;
 }
 
+/* Live Shows */
 
+#live-show-box {
+
+
+  
+}
 
 
 
