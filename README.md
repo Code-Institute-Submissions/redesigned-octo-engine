@@ -83,6 +83,13 @@ Specify what it takes to deploy your app.
   * Hover over an image and the 'Pinterest' icon will appear on the top right, click on the icon and a new page opens to log into the 'Pinterest' website
   * As you resize the page (Desktop to Tablet to Mobile versions) the images and text reduce and the text moves around the images
 
+  * 'Our Music' Page
+    * Clicking on an Album name will show a paragraph of text about them, the picture and the title name text is turned orange
+    * Hover over an image and the 'Pinterest' icon will appear on the top right, click on the icon and a new page opens to log into the 'Pinterest' website
+    * As you resize the page (Desktop to Tablet to Mobile versions) the images and text reduce and the text moves around the images
+
+
+
 * 'Contact Us' page
   * Click on the Date field and a calendar popup will appear, select date and verify date shown in text box matches selected date
   * Enter the postcode 'CM2 0DS' and the Cost displayed will be '10.520969073383625'
