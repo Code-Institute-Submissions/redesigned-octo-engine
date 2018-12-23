@@ -1,7 +1,6 @@
 # monkees-stream-1-1
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This is a static app for the 1960's Rock band 'The Monkees' which serves as a platform to learn more about the band and contact them for show bookings.
 
 ## Prerequisites
 
@@ -20,7 +19,7 @@ You will need the following things properly installed on your computer.
 
 ## Running / Development
 
-* `ember serve`
+* `ember server`
 * Visit your app at [http://localhost:4200](http://localhost:4200).
 * Visit your tests at [http://localhost:4200/tests](http://localhost:4200/tests).
 
@@ -104,44 +103,44 @@ Specify what it takes to deploy your app.
 
 * As a user I want to click on the 'Home' link and be shown the 'Home' page
 
-  * Example acceptance criteria:
+  * Acceptance criteria:
     * The 'Home' page is shown
 
 * As a user I want to click on the 'Our Music' link and be shown the 'Our Music' page
 
-  * Example acceptance criteria:  
+  * Acceptance criteria:  
     * The 'Our Music' page is shown
 
 * As a user I want to click on the 'Contact/Book Us' link and be shown the 'Contact/Book Us' page
 
-  * Example acceptance criteria:
+  * Acceptance criteria:
     * The 'Contact/Book Us' page is shown
 
 * As a user I want to click on the 'Live Shows' link and be shown the 'Live Shows' page
 
-  * Example acceptance criteria:
+  * Acceptance criteria:
     * The 'Live Shows' page is shown
 
 * As a user I want to click on the 'The Monkees' link and be shown the 'The Monkees' page
 
-  * Example acceptance criteria:
+  * Acceptance criteria:
     * The 'The Monkees' page is shown
 
 * As a Mobile user I want to click on the 'Mobile Hamburger' and be shown the menu items
 
-  * Example acceptance criteria:
+  * Acceptance criteria:
     * The mobile menu items are visible
 
 * As a Mobile user I want to click on the 'Mobile Close' button and the menu items are hidden
 
-  * Example acceptance criteria:
+  * Acceptance criteria:
     * The mobile menu items are not visible
 
 ### Home page User Stories
 
 * As a user I want to see a video icon on the 'Home' page.  Clicking on the video icon will open a video player with autoplay.
 
-  * Example acceptance criteria:
+  * Acceptance criteria:
     * Video icon on the 'Home' page
     * Clicking on the Video icon will open a video player and start playing the video.
 
@@ -150,7 +149,7 @@ Specify what it takes to deploy your app.
 
 * As a user I want to see 3 icons ('FaceBook', 'Instagram' and 'Twitter') on the footer of the website across all routes on the website.
 
-  * Example acceptance criteria:
+  * Acceptance criteria:
     * The 'FaceBook', 'Instragram' and 'Twitter' icons are visible on all routes.
 
 ## Known Issues
