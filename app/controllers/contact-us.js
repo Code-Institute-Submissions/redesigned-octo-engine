@@ -31,7 +31,7 @@ const ses = new AWS.SES({
 const DEBOUNCE_MS = 750;
 const START_LONGITUDE = 51.4749506212706;  //address postcode SE3 7TG
 const START_LATITUDE = 0.0140262103854542; //address postcode SE3 7TG
-const COST_PER_KM = 0.3218688;
+const COST_PER_KM = 10.3218688;
 
 export default Controller.extend({
 
@@ -227,7 +227,7 @@ export default Controller.extend({
 
          let cost = distance * COST_PER_KM;
 
-         this.set('cost', cost);
+         this.set('cost', cost.toFixed(2));
 
        }
      }

@@ -9,13 +9,16 @@
       <div class="form-text-right">{{contact-type-select selectMessageType="setIsBooking" id='messageType'}}</div>
       {{#if isBooking}}
         <div class="form-text-right">
-          <label class="form-label">Show Date</label>{{date-picker date=mydate valueFormat='YYYY-MM-DD'}}
+          <label class="form-label">Show Date</label>{{date-picker date=mydate valueFormat='YYYY-MM-DD' minDate=0}}
         </div>
         <div class="form-text-right">
           {{#if searchPostcode.isRunning}}
               <i class="fa fa-spinner" aria-hidden="true"></i>
           {{/if}}
           <label class="form-label">Venue Post Code</label><input type="text" id="search-postcode" oninput={{perform searchPostcode value="target.value"}} placeholder="Post Code" />
+        </div>
+        <div class="form-text-right">
+          <label class="form-label">Booking Cost £</label><input type="text" id="booking-cost" value="{{cost}}" placeholder="0.00" />
         </div>
 
       {{/if}}
