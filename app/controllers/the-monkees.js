@@ -5,10 +5,15 @@ import Controller from '@ember/controller';
 
 export default Controller.extend({
 
-  isMickyDolenz: false,
-  isPeterTork: false,
-  isDavyJones: false,
-  isMichaelNesmith: false,
+  isMickyDolenzHeading: true,
+  isPeterTorkHeading: true,
+  isDavyJonesHeading: true,
+  isMichaelNesmithHeading: true,
+
+  isMickyDolenzParagraph: false,
+  isPeterTorkParagraph: false,
+  isDavyJonesParagraph: false,
+  isMichaelNesmithParagraph: false,
 
   actions: {
     pinterestImage: function(event) {
@@ -17,10 +22,15 @@ export default Controller.extend({
       //this.set('message',testText);
     },
     toggleMickyDolenz() {
-      this.toggleProperty('isMickyDolenz');
-      this.set('isPeterTork', false);
-      this.set('isDavyJones', false);
-      this.set('isMichaelNesmith', false);
+      this.toggleProperty('isMickyDolenzParagraph');
+
+      this.toggleProperty('isPeterTorkHeading');
+      this.toggleProperty('isDavyJonesHeading');
+      this.toggleProperty('isMichaelNesmithHeading');
+
+      this.set('isPeterTorkParagraph', false);
+      this.set('isDavyJonesParagraph', false);
+      this.set('isMichaelNesmithParagraph', false);
       Ember.$('#micky-dolenz-name').toggleClass("member-name-white member-name-orange");
 
       Ember.$('#peter-tork-name').removeClass("member-name-orange");
@@ -33,10 +43,15 @@ export default Controller.extend({
 
     },
     togglePeterTork() {
-      this.toggleProperty('isPeterTork');
-      this.set('isMickyDolenz', false);
-      this.set('isDavyJones', false);
-      this.set('isMichaelNesmith', false);
+      this.toggleProperty('isPeterTorkParagraph');
+
+      this.toggleProperty('isMickyDolenzHeading');
+      this.toggleProperty('isDavyJonesHeading');
+      this.toggleProperty('isMichaelNesmithHeading');
+
+      this.set('isMickyDolenzParagraph', false);
+      this.set('isDavyJonesParagraph', false);
+      this.set('isMichaelNesmithParagraph', false);
       Ember.$('#peter-tork-name').toggleClass("member-name-white member-name-orange");
 
       Ember.$('#micky-dolenz-name').removeClass("member-name-orange");
@@ -48,10 +63,15 @@ export default Controller.extend({
       Ember.$('#michael-nesmith-name').addClass("member-name-white");
     },
     toggleDavyJones() {
-      this.toggleProperty('isDavyJones');
-      this.set('isPeterTork', false);
-      this.set('isMickyDolenz', false);
-      this.set('isMichaelNesmith', false);
+      this.toggleProperty('isDavyJonesParagraph');
+
+      this.toggleProperty('isPeterTorkHeading');
+      this.toggleProperty('isMickyDolenzHeading');
+      this.toggleProperty('isMichaelNesmithHeading');
+
+      this.set('isPeterTorkParagraph', false);
+      this.set('isMickyDolenzParagraph', false);
+      this.set('isMichaelNesmithParagraph', false);
       Ember.$('#davy-jones-name').toggleClass("member-name-white member-name-orange");
 
       Ember.$('#peter-tork-name').removeClass("member-name-orange");
@@ -63,10 +83,15 @@ export default Controller.extend({
       Ember.$('#michael-nesmith-name').addClass("member-name-white");
     },
     toggleMichaelNesmith() {
-      this.toggleProperty('isMichaelNesmith');
-      this.set('isPeterTork', false);
-      this.set('isDavyJones', false);
-      this.set('isMickyDolenz', false);
+      this.toggleProperty('isMichaelNesmithParagraph');
+
+      this.toggleProperty('isPeterTorkHeading');
+      this.toggleProperty('isDavyJonesHeading');
+      this.toggleProperty('isMickyDolenzHeading');
+
+      this.set('isPeterTorkParagraph', false);
+      this.set('isDavyJonesParagraph', false);
+      this.set('isMickyDolenzParagraph', false);
       Ember.$('#michael-nesmith-name').toggleClass("member-name-white member-name-orange");
 
       Ember.$('#peter-tork-name').removeClass("member-name-orange");

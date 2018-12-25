@@ -22,13 +22,23 @@ export default Ember.Component.extend({
 
         try {
           window.audioTrack = new Audio();
-          window.audioTrack.src = "assets/audio/1914DayByDay-20140627-27thJune.mp3";
+          window.audioTrack.src = "assets/audio/HomeFront-20160209-9February1916.mp3";
           window.audioTrack.play();
           this.toggleProperty('isTrackPlaying');
 
         } catch (e) {
 
-          Ember.$('#play-track').text("Sorry Audio Not Supported");
+            try {
+              window.audioTrack = new Audio();
+              window.audioTrack.src = "assets/audio/HomeFront-20160209-9February1916.ogg";
+              window.audioTrack.play();
+              this.toggleProperty('isTrackPlaying');
+
+            } catch (e) {
+
+              Ember.$('#play-track').text("Sorry Audio Not Supported");
+
+            }
 
         }
     },
