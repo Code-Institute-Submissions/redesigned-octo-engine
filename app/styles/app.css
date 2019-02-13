@@ -2,27 +2,13 @@
 
 /*Main Windows All Formats*/
 
-body {
-  margin: 0;
-  background-color: #fb851b;
-}
-
-#appview {
-  background: url('images/The-Monkees161207-015.jpg'); no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  margin: 0;
-}
-
 /*All Formats*/
 
 /* Mobile Menu Hamburger */
 
 .fa-bars {
   color: #ffffff;
-  font-size: 5vw;
+  font-size: 4vh;
   padding-left: 3px;
 }
 
@@ -35,22 +21,89 @@ body {
 
 .fa-window-close:hover {
   cursor: pointer;
+  min-height: 100%;
 }
 
 
 /* Home Page body */
 
+.media-desktop .media-tablet, html {
+  background-image: url('images/The-Monkees161207-016.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  margin: 0;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.media-mobile, html {
+  background-image: url('images/The-Monkees161207-016.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: left top;
+  margin: 0;
+  overflow: auto;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding-bottom: 6rem;
+  min-height: 100%;
+}
+
+.box-application {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
+
+
+.box-application .row.header {
+  flex: 0 1 auto;
+}
+
+/* this was not done start*/
+.box-application .row.content {
+  flex: 1 1 auto;
+}
+
+.box-application .row.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+/* end */
+
 .container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  box-sizing: border-box;
+  height: 80%;
   width: 100%;
-  min-height: 633px;
+  position: absolute;
+}
+
+
+.box-above-below{
+  flex: 1 1 auto;
 }
 
 .box {
-  flex-grow: 1;
+  flex: 0 1 auto;
 }
 
 #home-play-icon:hover {
@@ -64,7 +117,7 @@ body {
 
 .fa-play-circle {
   color: #ffffff;
-  font-size: 10vh;
+  font-size: 8vh;
 }
 
 .fa-play-circle:hover {
@@ -110,7 +163,7 @@ body {
 #band-members-box {
   max-width: 80%;
   background-color: #0a0d36;
-  flex-grow: 2;
+  flex-grow: 1 1 auto;
   overflow: auto;
   border-radius: 0.5%;
   padding: 0 0.8% 0 0.8%;
@@ -119,7 +172,7 @@ body {
 
 .member-name {
   float: left;
-  font-size: 3vh;
+  font-size: 2vh;
   font-family: "Impact", Charcoal, sans-serif;
   padding-right: 20px;
   cursor: pointer;
@@ -136,7 +189,7 @@ body {
 .paragraph-text {
   float: left;
   color: #ffffff;
-  font-size: 2.5vh;
+  font-size: 2vh;
   font-family: "Impact", Charcoal, sans-serif;
 }
 
@@ -153,8 +206,7 @@ div .band-image-container {
   resize: both;
 }
 
-
-div .pinterest {
+.media-desktop div .pinterest {
   max-width: 12%;
   resize: both;
   z-index: 100;
@@ -164,6 +216,30 @@ div .pinterest {
   visibility: hidden;
   transition-delay: 3s;
 }
+
+.media-tablet div .pinterest {
+  max-width: 12%;
+  resize: both;
+  z-index: 100;
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  visibility: hidden;
+  transition-delay: 3s;
+}
+
+
+.media-mobile div .pinterest {
+  max-width: 12%;
+  resize: both;
+  z-index: 100;
+  position: absolute;
+  top: -14%;
+  right: 0%;
+  visibility: hidden;
+  transition-delay: 3s;
+}
+
 
 .pinterest_logo {
   width: 100%;
@@ -188,18 +264,34 @@ transition-delay: 0s;
 }
 
 .instruction-text {
+  float: right;
   color: #ffffff;
-  font-size: 2.5vh;
+  font-size: 3vh;
   font-family: "Impact", Charcoal, sans-serif;
 }
 
 .form-text-right {
   float: right;
   color: #ffffff;
-  font-size: 2.5vh;
+  font-size: 2vw;
   font-family: "Impact", Charcoal, sans-serif;
   clear: right;
-  padding-top: 10px;
+  padding: 5px 0px 5px 0px;
+}
+
+.message-text{
+
+  font-size: 3vw;
+}
+
+.submit-button{
+  font-size: 2.5vh;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  border: none;
+  border-radius: 3px;
+  background-color: #fb851b;
 }
 
 .form-label {
@@ -224,15 +316,6 @@ transition-delay: 0s;
   font-size: 3.5vh;
   font-family: "Impact", Charcoal, sans-serif;
 }
-
-/* Live Shows */
-
-#live-show-box {
-
-
-  
-}
-
 
 
 /*##########*/
@@ -261,7 +344,7 @@ transition-delay: 0s;
 
 .media-desktop .header-links a {
     color: #ffffff;
-    font-size: 4vh;
+    font-size: 1.5vw;
     font-family: "Impact", Charcoal, sans-serif;
     text-transform: capitalize;
     text-decoration:  none;
@@ -269,13 +352,13 @@ transition-delay: 0s;
     padding-right: 30px;
 }
 
-.media-desktop .header-links a:hover {
+.media-desktop .media-desktopLarge .header-links a:hover {
   color: #fb851b;
 }
 
 
 .media-desktop #the-monkees a {
-  font-size: 5vh;
+  font-size: 1.8vw;
   color: #fb851b;
 }
 
@@ -298,13 +381,11 @@ transition-delay: 0s;
 }
 
 
-
-
 /* Home page video */
 
 .media-desktop #video-box {
   max-width: 60%;
-  padding: 8px 15px 8px 15px;
+  padding: 0px 5px 0px 5px;
   flex-grow: 2;
   position: relative;
   background-color: #050924;
@@ -324,7 +405,7 @@ transition-delay: 0s;
 }
 
 .media-desktop .icons-div {
-  max-width: 4%;
+  max-width: 3%;
   resize: both;
   flex-direction: row;
   padding: 0% 0.4% 0% 0.4%;
@@ -361,7 +442,7 @@ transition-delay: 0s;
 
 .media-tablet .header-links a {
     color: #ffffff;
-    font-size: 3vh;
+    font-size: 2vw;
     font-family: "Impact", Charcoal, sans-serif;
     text-transform: capitalize;
     text-decoration:  none;
@@ -375,7 +456,7 @@ transition-delay: 0s;
 
 
 .media-tablet #the-monkees a {
-  font-size: 4vh;
+  font-size: 2.2vw;
   color: #fb851b;
 }
 
@@ -403,14 +484,11 @@ transition-delay: 0s;
 
 .media-tablet #video-box {
   max-width: 60%;
-  padding: 8px 15px 8px 15px;
+  padding: 0px 5px 0px 5px;
   flex-grow: 2;
   position: relative;
   background-color: #050924;
 }
-
-
-
 
 
 
@@ -439,10 +517,16 @@ transition-delay: 0s;
 /*##########*/
 
 /*Navbar Mobile*/
+/* This menu id stops the close x moving */
+#mobile-menu {
+  position: absolute;
+}
 
 .media-mobile .navbar {
   display: flex;
   top: 0;
+  position: absolute;
+  z-index: 1;
 }
 
 .mobile-menu-icon:hover {
@@ -452,20 +536,23 @@ transition-delay: 0s;
 .media-mobile .header-links {
   flex-direction: column;
   white-space: nowrap;
-  z-index: 999;
   position: relative;
-  padding: 5px 5px 5px 20px;
+  padding: 5px 5px 5px 40px;
   background: rgba(0,0,0,0.5);
   display: none;
 }
 
+.media-mobile .header-links:nth-child(4) {
+  padding: 5px 5px 5px 45px;
+}
+
 .media-mobile .header-links a {
     color: #FFFFFF;
-    font-size: 3vw;
+    font-size: 4vw;
     font-family: "Impact", Charcoal, sans-serif;
     text-transform: capitalize;
     text-decoration:  none;
-    padding-left: 0px;
+    padding-left: 5px;
     padding-right: 5px;
 }
 
@@ -474,7 +561,7 @@ transition-delay: 0s;
 }
 
 .media-mobile #the-monkees a {
-  font-size: 3.5vw;
+  font-size: 4.5vw;
   color: #fb851b;
 }
 
@@ -491,14 +578,16 @@ transition-delay: 0s;
 /*Mobile Page Body*/
 
 .media-mobile #x-button {
-  top: -19px;
-  left: -24px;
+  top: 0px;
+  left: 0px;
   position: absolute;
 }
 
 
 .media-mobile .fa-window-close {
-  font-size: 4vw;
+  position: absolute;
+  z-index: 1;
+  font-size: 4vh;
   padding-left: 3px;
   color: #ffffff;
 }
@@ -509,14 +598,11 @@ transition-delay: 0s;
 
 .media-mobile #video-box {
   max-width: 60%;
-  padding: 5px 11px 5px 11px;
+  padding: 0px 5px 0px 5px;
   flex-grow: 2;
   position: relative;
   background-color: #050924;
 }
-
-
-
 
 /* Mobile Footer */
 
@@ -526,19 +612,20 @@ transition-delay: 0s;
   overflow: hidden;
   position: relative;
   padding: 1% 0 0.3% 0;
+  background-color: #060409;
 }
 
 
 
 .media-mobile .icons-div {
-  max-width: 6%;
+  max-width: 10%;
   resize: both;
   display: inline-block;
   visibility: hidden;
 }
 
 .media-mobile .icons-div-show {
-  max-width: 6%;
+  max-width: 10%;
   resize: both;
   padding: 0% 0.4% 0% 0.4%;
   display: inline-block;
@@ -551,15 +638,17 @@ transition-delay: 0s;
 
 .media-mobile .twitter-icon {
   display: inline-block;
-  max-width: 6%;
+  max-width: 10%;
   resize: both;
+  padding: 0% 0.4% 0% 0.4%;
   right: -3%;
   position: absolute;
 }
 
 .media-mobile .twitter-icon-show {
   display: inline-block;
-  max-width: 6%;
+  max-width: 10%;
   resize: both;
+  padding: 0% 0.4% 0% 0.4%;
   margin-right: 0.4%;
 }

@@ -154,8 +154,7 @@ Specify what it takes to deploy your app.
 
 ## Known Issues
 
-* The background image moves when the mobile menu items are visible, it appears to change the focus to the lead singer of the band
 * The Contact Us Acceptance Test is commented out because the 'wait-for-controller-with-promise' stalls because the postcode lookup either doesn't return a valid promise or the helper is flawed
-* DEPRECATION: Addon files were detected in /node_modules/ember-cli-datepicker/addon, ember-cli-babel has been installed but warning still presented
+* DEPRECATION: Ember.String.fmt is deprecated, use ES6 template strings instead. [deprecation id: ember-string-utils.fmt] See http://babeljs.io/docs/learn-es2015/#template-strings for more details. (console message)
 * The 'Booking Inquiry' date can be in the past and has not been validated
 * The Contact / Book Us page email sending has not been tested because it requires #If you want Sender Policy Framework (SPF) checks to succeed, you must publish an SPF record to the DNS server of the MAIL FROM domain. Learn more.#

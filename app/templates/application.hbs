@@ -1,11 +1,17 @@
-<div id="appview">
-  <div class="{{media.classNames}}">
-    {{navigation-menu-bar}}
+  <div class="box-application">
+  <div class="row header">
+    <div class="{{media.classNames}}">
+      {{navigation-menu-bar}}
+    </div>
   </div>
-  <div class="{{media.classNames}}">
-    {{outlet}}
+  <div class="row content">
+    <div class="{{media.classNames}}">
+      {{outlet}}
+    </div>
   </div>
-  <div class="{{media.classNames}}">
-    {{social-footer}}
+  <div class="row footer">
+    <div class="{{media.classNames}}">
+      {{social-footer}}
+    </div>
   </div>
 </div>
